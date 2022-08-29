@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>양파마켓 메인페이지</title>     
+        <link rel="icon" type="image/x-icon" href="assets/onion1.png"/>    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />  
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        #onion {
+            widht: 140px;
+            height: 140px;
+        }
+       
+       #title {
+           font-size: 30px;
+           font-style: italic;
+           color: white;
+       }
+        
+       #item1 {
+          background-color: gray;
+          width: 224px;
+          height: 200px;
+       } 
+       #slide {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+ #search{
+    
+   width: 600px;
+   height: 30px;
+ }
+
+ #scid{
+   
+   text-align : center;
+ }
+ 
+ .footer{
+   position:relative;
+}
+.footer .footer-top{
+   padding:100px 0px;
+   position:relative;
+   background:#aaaaaa;
+}
+.footer .footer-top:before{
+   position:absolute;
+   content:"";
+   left:0;
+   top:0;
+   height:100%;
+   width:100%;
+   background:#000;
+   opacity:0.1;
+}
+.footer .single-footer{
+   
+}
+.footer .single-footer .social{
+   margin-top:25px;
+}
+.footer .single-footer .social li{
+   display:inline-block;
+   margin-right:10px;
+}
+.footer .single-footer .social li:last-child{
+   margin-right:0px;
+}
+.footer .single-footer .social li a {
+   height: 34px;
+   width: 34px;
+   line-height: 34px;
+   text-align: center;
+   border: 1px solid #fff;
+   text-align: center;
+   padding: 0;
+   border-radius: 100%;
+   display: block;
+   color:#fff;
+   font-size: 16px;
+}
+.footer .single-footer .social li a:hover{
+   color:#1A76D1;
+   background:#fff;
+   border-color:transparent;
+}
+.footer .single-footer .social li a i{
+   
+}
+.footer .single-footer.f-link li a i{
+   margin-right:10px;
+}
+.footer .single-footer.f-link li{
+   display:block;
+   margin-bottom:12px;
+}
+.footer .single-footer.f-link li:last-child{
+   margin:0;
+}
+.footer .single-footer.f-link li a {
+   display: block;
+   color: #fff;
+   text-transform: capitalize;
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   font-weight: 400;
+}
+.footer .single-footer.f-link li a:hover{
+   padding-left:8px;
+}
+.footer .single-footer h2{
+   color:#fff;
+   font-size:20px;
+   font-weight:600;
+   text-transform:capitalize;
+   margin-bottom:40px;
+   padding-bottom:20px;
+   text-transform:capitalize;
+   position:relative;
+}
+.footer .single-footer h2::before{
+   position: absolute;
+   content: "";
+   left: 0;
+   bottom: 0px;
+   height: 3px;
+   width: 50px;
+   background: #fff;
+}
+.footer .single-footer .time-sidual{
+   margin-top:15px;
+}
+.footer .single-footer .time-sidual{
+   overflow:hidden;
+}
+.footer .single-footer .time-sidual li {
+   display: block;
+   color: #fff;
+   width: 100%;
+   margin-bottom: 5px;
+}
+.footer .single-footer .time-sidual li span{
+   display:inline-block;
+   float:right;
+}
+.footer .single-footer .day-head .time {
+   font-weight: 400;
+   float: right;
+}
+.footer .single-footer p{
+   color:#fff;
+}
+.footer .single-footer .newsletter-inner{
+   margin-top:20px;
+   position:relative;
+}
+.footer .single-footer .newsletter-inner input {
+   background: transparent;
+   border: 1px solid #fff;
+   height: 50px;
+   line-height: 42px;
+   width: 100%;
+   margin-right: 15px;
+   color: #fff;
+   padding-left: 18px;
+   padding-right: 70px;
+   display: inline-block;
+   float: left;
+   border-radius: 0px;
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   font-weight: 400;
+   border-radius: 5px;
+}
+.footer .single-footer .newsletter-inner input:hover{
+   padding-left: 22px;
+}
+.footer input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+
+.footer input::-moz-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+
+.footer input::-ms-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer input::input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer .single-footer .newsletter-inner .button {
+   position: absolute;
+   right: 0;
+   top: 0;
+   height: 50px;
+   line-height: 50px;
+   width: 50px;
+   background: #fff;
+   border-left: 1px solid #fff;
+   text-shadow: none;
+   box-shadow: none;
+   display: inline-block;
+   border-radius: 0px;
+   border: none;
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   border-radius: 0 5px 5px 0;
+   color: #1A76D1;
+   font-size: 25px;
+}
+.footer .single-footer .newsletter-inner .button i{
+   -webkit-transition:all 0.4s ease;
+   -moz-transition:all 0.4s ease;
+   transition:all 0.4s ease;
+}
+.footer .single-footer .newsletter-inner .button:hover i{
+   color:#2C2D3F;
+}
+.footer .copyright{
+   background:#1A76D1;
+   padding:25px 0px 25px 0px;
+   text-align:center;
+}
+.footer .copyright .copyright-content p{
+   color:#fff;
+}
+.footer .copyright .copyright-content p a{
+   color:#fff;
+   font-weight:400;
+   text-decoration:underline;
+   display:inline-block;
+   margin-left:4px;
+}
+ 
+ 
+ 
+</style>
+      
+    
+	
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	
+	</head>
+    <body>
+       
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">중고 거래 마켓</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">홈페이지</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login2.jsp">로그인</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">메뉴</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">메뉴1</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">메뉴2</a></li>
+                                <li><a class="dropdown-item" href="#!">메뉴3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <!-- 검색창 -->
+                   
+                    
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                                                       장바구니
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">4</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <!-- wow -->
+        
+
+	
+	<div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><img src="data0/images/danger2.jpg" alt="신뢰" title="신뢰" id="wows0_0"/></li>
+		<li><a href="http://wowslider.net"><img src="data0/images/danger3.jpg" alt="jquery carousel" title="안전거래" id="wows0_1"/></a></li>
+		<li><img src="data0/images/danger4.jpg" alt="양심거래" title="양심거래" id="wows0_2"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="신뢰"><span><img src="data0/tooltips/danger2.jpg" alt="신뢰"/>1</span></a>
+		<a href="#" title="안전거래"><span><img src="data0/tooltips/danger3.jpg" alt="안전거래"/>2</span></a>
+		<a href="#" title="양심거래"><span><img src="data0/tooltips/danger4.jpg" alt="양심거래"/>3</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css slider</a> by WOWSlider.com v9.0</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script>
+	<div></div>
+        
+  
+        
+        
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder"><img id="onion" src="images/onion1.png">Onion Market</h1>
+                    <p class="lead fw-normal text-white-50 mb-0" id="title">중고 거래 사이트</p>
+                     <form class="form-inline">
+                    <input id="search" type="search" placeholder="상품을 검색해주세요." aria-label="Search">
+                     
+                    <button type="submit">검색</button>
+                    </form> 
+                </div>
+            </div>
+        </header>
+        <br>
+      
+        <h2 id="scid">최신 상품</h2>
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                        
+                            <img id="item1"class="card-img-top" src="images/Tshirt.jpg" alt="..." />
+                            
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                 
+                                    <h5 class="fw-bolder">T-Shirt</h5>
+                                   
+                                    10,000원 ~ 12,000원
+                                </div>
+                            </div>
+                          
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                          
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                            
+                            <img id="item1" class="card-img-top" src="images/toy.jpg" alt="..." />
+                            
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                   
+                                    <h5 class="fw-bolder">당근뽑기 장난감</h5>
+                     
+                                    
+                                   
+                                    <span>4000원~5000원</span>
+                                    
+                                </div>
+                            </div>
+                          
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                            <!-- Product image-->
+                            <img id="item1" class="card-img-top" src="images/duck.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">무드등</h5>
+                                    <!-- Product price-->
+                                    <span>6000~6500원</span>
+                                   
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img id="item1" class="card-img-top" src="images/ice.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">얼음판</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                       
+                                    </div>
+                                    <!-- Product price-->
+                                    10,000원~11,000원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                            <!-- Product image-->
+                            <img id="item1" class="card-img-top" src="images/my.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">밀폐 용기 세트</h5>
+                                    <!-- Product price-->
+                                    <span>20,000~25,000원</span>
+                                    
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img id="item1" class="card-img-top" src="images/tb.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">아이패드 에어 4세대</h5>
+                                    <!-- Product price-->
+                                    450,000원~650,000원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                            <!-- Product image-->
+                            <img id="item1" class="card-img-top" src="images/iphone.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">아이폰 12</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                      
+                                    </div>
+                                    <!-- Product price-->
+                                    <span>400,000~600,000원</span>
+                                    
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img id="item1" class="card-img-top" src="images/air.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">에어팟</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        
+                                    </div>
+                                    <!-- Product price-->
+                                    19,000~20,000원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="footer ">
+         <!-- Footer Top -->
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-footer">
+                        <h2>양파마켓 </h2>
+                                <a href="#"><i class="icofont-facebook"> <img src="/WebContent/어니언마켓-removebg-preview.png" width="300px" height="90px"></i></a>
+                                <hr>
+                        <p>서울특별시 영등포구 영등포5가 GlobalIn
+                                    회사명 : (주)양파마켓　대표자 : 이승권　사업자등록번호 : 856-88-00319
+                                    Copyright ⓒ 2021 ZIPSA. All rights reserved. Inspired by Charlie C.</p>
+                        <!-- Social -->
+                        
+                           
+                           
+                        
+                                
+                        <!-- End Social -->
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-footer f-link">
+                        <h2>Quickss Links</h2>
+                        <div class="row">
+                           <div class="col-lg-6 col-md-6 col-12">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>   
+                              </ul>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-12">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>   
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-footer">
+                        <h2>Open Hours</h2>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
+                        <ul class="time-sidual">
+                           <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+                           <li class="day">Saturday <span>9.00-18.30</span></li>
+                           <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-footer">
+                        <h2>Newsletter</h2>
+                        <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                           <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+                              onblur="this.placeholder = 'Your email address'" required="" type="email">
+                           <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+    
